@@ -1,0 +1,104 @@
+# ┌───────────────────────────────────────────────────────────────┐
+# │                     Next.js / React / TypeScript              │
+# └───────────────────────────────────────────────────────────────┘
+
+# Next.js build output
+.next/
+out/
+dist/
+
+# Dependency directories
+node_modules/
+.pnpm-store/
+bun.lockb
+yarn.lock     # ← keep only if you're actually using Yarn
+package-lock.json   # ← keep only if you're actually using npm
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# IDE / Editor files
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Testing / coverage
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+cypress/videos/
+cypress/screenshots/
+
+# Build artifacts & temp files
+*.log
+*.cache
+.cache/
+.temp/
+tmp/
+dist-ssr/
+*.tsbuildinfo
+*.tgz
+
+# Optional: local development databases / files
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+
+# Prisma (if used)
+prisma/dev.db
+prisma/dev.db-journal
+
+# Sentry
+.sentryclirc
+
+# Vercel
+.vercel
+.now
+
+# Turborepo
+.turbo/
+
+# Storybook
+.storybook/
+chromatic.log
+
+# Expo / React Native (if you ever add mobile)
+.expo/
+expo-env.d.ts
+
+# ───────────────────────────────────────────────────────────────
+#                     Keep these commented if needed
+# ───────────────────────────────────────────────────────────────
+
+# If you commit lockfiles on purpose (monorepo / CI consistency):
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# If you use local SSL certificates
+localhost-key.pem
+localhost-cert.pem
+
+# If you're using docker locally
+docker-compose.override.yml
