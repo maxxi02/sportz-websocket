@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import { matchesRouter } from "./routes/matches.js";
 
 dotenv.config();
 
@@ -11,6 +12,8 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("<h1 style='color: blue;'>Welcome to the Express Server!</h1>");
 });
+
+app.use("/matches", matchesRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port http://localhost:${port}`);
